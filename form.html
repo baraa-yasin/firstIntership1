@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <header>
+        <h1>internship Application Form</h1>
+        <p>Fill out the form below to apply for our internship program.</p>
+    </header>
+
+    <main>
+    <form>
+        <section>
+            <h2>Personal Information</h2>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br>
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+        </section>
+
+        <section>
+            <h2>Contact Information</h2>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required><br>
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" required></textarea><br>
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required><br>
+        </section>
+
+        <section>
+            <h2>Internship Information</h2>
+            <label for="position">Position Applied For:</label>
+            <select id="position" name="position" required>
+                <option value="web">Web Development</option>
+                <option value="mobile">Mobile Development</option>
+                <option value="test">Software Testing</option>
+                <option value="design">UI/UX Design</option>
+            </select>
+            <br>
+            <label for="date">Preferred Start Date:</label>
+            <input type="date" id="date" name="date" required>
+            <br>
+            <label for="type">Work Type:</label>
+            <select id="type" name="type" required>
+                <option value="site" >On-site</option>
+                <option value="remote">Remote</option>
+                <option value="hybrid">Hybrid</option>
+            </select>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <label for="university">University/College:</label>
+            <input type="text" id="university" name="university" required><br>
+            <label for="major">Major:</label>
+            <input type="text" id="major" name="major" required><br>
+            <label for="g_year" >Graduation Year:</label>
+            <input type="number" id="g_year" name="g_year" min="1900" max="2099" required><br>
+        </section>
+        <section>
+            <h2>Skills</h2>
+            <label for="skills">check your skills:</label>
+            <input type="checkbox" id="html" name="skills" value="html">
+            <label for="html">HTML</label>
+            <input type="checkbox" id="css" name="skills" value="css">
+            <label for="css">CSS</label>
+            <input type="checkbox" id="js" name="skills" value="js">
+            <label for="js">JavaScript</label>
+            <input type="checkbox" id="python" name="skills" value="python">
+            <label for="python">Python</label>
+            <input type="checkbox" id="java" name="skills" value="java">
+            <label for="java">Java</label>
+        </section>
+
+        <section>
+            <h2>Additional Information</h2>
+            <label>Experience Level:</label>
+            <br>
+            <input type="radio" id="beginner" name="Level" value="beginner" required>
+            <label for="beginner">Beginner</label><br>
+            <input type="radio" id="Intermediate" name="Level" value="Intermediate" required>
+            <label for="Intermediate">Intermediate</label><br>
+            <input type="radio" id="Advanced" name="Level" value="Advanced" required>
+            <label for="Advanced">Advanced</label><br>
+            
+            </section>
+
+            <section>
+            <p>Why do you want to join our internship?</p>
+            <textarea id="reason" name="reason" required></textarea><br>
+            </section>
+
+            <section>
+            <p>Upload your CV:</p>
+            <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" required><br>
+            </section>
+
+            <section>
+                <input type="checkbox" id="tik" name="tik" required>
+                <label for="tik">I agree to the terms and conditions.</label>
+            </section>
+
+            <section>
+                <button type="reset">Reset Form</button>
+                <button type="submit">Submit Application</button>
+            </section>
+
+
+
+
+
+    </form>
+    </main>
+
+    <footer>
+
+
+    </footer>
+</body>
+</html>
